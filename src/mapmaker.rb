@@ -2,31 +2,43 @@ class MapMaker
 
   attr_accessor :array_h, :array_w, :map, :r_width, :r_height
 
-  def initialize random, w, h #if true a random sized map will be built
+  def initialize random = false, w, h #if true a random sized map will be built
     if random
 	    build_rmap
-		else
-      get_map_dimensions
-	    build_map
+    else
+      @array_w = w
+      @array_h = h
+      build_map
 	  end
   end
 
-  def get_map_dimensions
-    print "Input map height: " #this is the arrays height
-    @array_h = gets.chomp
-    print "\nInput map width: " #this is the arrays width
-    @array_w = gets.chomp
-  end
-
   def build_map
-  	@map = Array.new(@array_w) { Array.new(@array_h) }
+  	@map = Array.new(@array_w) { Array.new(@array_h, [0,0,0]) }
   end
 
   def build_rmap input_w, input_h
-  	random_n = Random.new()
-	@r_height = random_n.rand(0..input_h)
-	@r_width = random_n.rand(0..input_w)
-	@map = Array.new(@r_width) { Array.new(@r_height) }
+    random_n = Random.new()
+	  @r_height = random_n.rand(0..input_h)
+	  @r_width = random_n.rand(0..input_w)
+	  @map = Array.new(@r_width) { Array.new(@r_height, [0,0,0]) }
+  end
+
+  def get_element x, y
+    return @map[x][y]
+  end
+  
+  #method for testing purposes, not to actually display what the user should see
+  #used to visualize the data that is currently on the map
+  def print_map         
+    for i in 1..@array_w
+      print "#{i}     "
+      if i == @array_w
+        print "\n"
+      end
+    end
+    @map.each do |r|
+      puts r.each {|p| p }.join(" ")
+    end
   end
 
 =begin
@@ -38,8 +50,9 @@ class MapMaker
 
 =end
 
-  def set_map_value w, h, values #here values is an array which is explained above
-  	@map[w][h] = values
+  def set_map_value w, h, values #here values is an array which is explained above 
+  	                             #or it is a single integer value for testing
+    @map[w][h] = values
   end
 
 end
