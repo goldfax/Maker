@@ -1,0 +1,8 @@
+1. The first step is to create MapMaker class
+2. The second step is to create the Monster classes
+3. The third step is to create the Player class
+4. Test all the steps with each other
+5. Write a story
+6. Add classes needed to complement the story
+7. Create a map using MapMaker to follow the journey of the story
+8. Program the interactions that the story will create
