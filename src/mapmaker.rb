@@ -31,8 +31,11 @@ class MapMaker
   #used to visualize the data that is currently on the map
   def print_map         
     for i in 1..@array_w
-      print "#{i}     "
-      if i == @array_w
+      if i.class == Fixnum
+        print "#{i}     "
+      elsif i.class != Fixnum
+        print "1     "
+      elsif i == @array_w
         print "\n"
       end
     end
