@@ -33,13 +33,25 @@ class Dragon < Monster   #at low levels you do not want to run into a dragon, wo
                          #at least currently
   attr_accessor :health, :attack_power, :defense, :skills, :level, :name
 
-  def initialize
-    @name = "Dragon"
+  def initialize name
+    @name = name
     @level = Random.rand(60..100)  #dragons are high leveled creatures, there can be different leveled dragons
     @health = 1000 + 0.25*@level     #if this runs out the dragon is dead
         @attack_power = 0.25*@level #percentage which modifies the damage done by a skill, depends on the level of the monster
     @defense = 100 + 0.2*@level #percentage which modifies the damage taken
     @skills = [flame_breath, fly, slash, stomp] #these skills do different damage 
+  end
+  
+  def flame_breath
+  end
+
+  def fly
+  end
+
+  def slash
+  end
+  
+  def stomp
   end
 
 end
