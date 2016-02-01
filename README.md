@@ -8,3 +8,7 @@ to test out the interactivity of the classes and the map. Also trying to find be
 
 Currently there is a MapMaker class and several monster classes that I have yet to test.
 The MapMaker class works fine, and can visualize the map data, but there must be some better way to do it.
+
+####Goals of the Project
+
+To properly understand structuries like arrays, and expand knowledge of ::

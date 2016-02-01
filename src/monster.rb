@@ -69,6 +69,12 @@ class Slime < Monster
                                #as shown by this slime here
   end
 
+  def slime
+  end
+  
+  def tackle
+  end
+
 end 
         
 class Bandit < Monster
@@ -82,6 +88,19 @@ class Bandit < Monster
     @defense = 10 + 0.075*@level
     @skills = [stab, stealth, pistol, aim]
   end
+
+  def stab
+  end
+
+  def stealth
+  end
+
+  def pistol
+  end
+  
+  def aim
+  end
+
 end
 
 class Eagle
@@ -95,6 +114,19 @@ class Eagle
     @defense = 15 + 0.1*@level
     @skills = [dive, peck, slash, fly]
   end
+
+  def dive
+  end
+
+  def peck
+  end
+
+  def slash
+  end
+
+  def fly
+  end
+
 end
 
 class Skeleton_Knight
@@ -107,4 +139,17 @@ class Skeleton_Knight
     @skills = [shield, stun, slash, dark_bolt] #going to have to write methods for all of
                                                #the attacks for all of the monsters
   end
+
+  def shield
+  end
+
+  def stun
+  end
+
+  def slash
+  end
+
+  def dark_bolt
+  end
+
 end
