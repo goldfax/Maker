@@ -1,0 +1,3 @@
+#here to ignore some subl files
+.sublime-project
+.sublime-workspace

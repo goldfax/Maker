@@ -2,13 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "src"
-		},
-		{
-			"path": "resources"
-		},
-		{
-			"path": "notes"
+			"path": "."
 		}
 	]
 }
