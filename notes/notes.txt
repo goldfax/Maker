@@ -8,3 +8,9 @@
 6. Add classes needed to complement the story
 7. Create a map using MapMaker to follow the journey of the story
 8. Program the interactions that the story will create
+
+
+
+Update: Will try and use a more complex datastructure for map as the array is a bit simple, and 
+really I want something more like a has where things can be accessed by a key rather than looping through
+and finding it. Or a linked list, which would be very interesting.
