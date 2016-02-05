@@ -11,4 +11,4 @@ The MapMaker class works fine, and can visualize the map data, but there must be
 
 ####Goals of the Project
 
-To properly understand structuries like arrays, and expand knowledge of ::
+To properly understand structuries like arrays, and expand knowledge of such things.::

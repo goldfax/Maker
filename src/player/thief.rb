@@ -5,3 +5,6 @@ Description: This file is a class file that defines the thief job that the playe
              This class defines the abilities and stats that a thief would have.  
 =end
 require './player.rb'
+
+class Thief < Player
+end
