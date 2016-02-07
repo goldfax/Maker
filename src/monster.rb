@@ -1,3 +1,6 @@
+
+
+
 class Monster #super class monster that contains methods that other types of monsters
               #may use
   def initialize

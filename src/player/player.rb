@@ -2,9 +2,8 @@ class Player
   
   attr_accessor :name, :job, :level, :experience, :money, :health
   
-  def initialize name, job,
+  def initialize name
     @name = name
-    @job = job
     @level = 1
     @experience = 0
     @money = 0
