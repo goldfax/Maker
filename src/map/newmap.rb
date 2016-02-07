@@ -45,25 +45,7 @@ class Room
       self.swest value
     when 'se'
       self.seast value
-    when 'n w'
-      self.north value
-      self.west value
-    when 'n e'
-      self.north value
-      self.east value
-    when 'n s'
-      self.north value
-      self.south value
-    when 'n nw'
-      self.north value
-      self.northwest value
-    when 'n ne'
-      self.north value
-      self.northeast value
-    when ''
     end
-
-
   end
 
   def north v
