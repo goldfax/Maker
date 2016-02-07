@@ -1,12 +1,13 @@
 class Player
   
-  attr_accessor :name, :job, :level, :experience, :money, :health
+  attr_accessor :name, :job, :level, :experience, :money, :health, :required_exp
   
   def initialize name
     @name = name
     @level = 1
     @experience = 0
     @money = 0
+    @required_exp = 500
   end
 
 =begin
@@ -38,6 +39,10 @@ class Player
     if experience > somenumber
       self.level += 1
     end
+  end
+
+  def increment_required_experience
+    @required_exp += @required_exp * @level
   end
 
 end                                                  

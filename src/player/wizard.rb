@@ -11,6 +11,7 @@ require './player.rb'
 
 class Wizard < Player  #inherit functions from Player class
 
+  attr_accessor 
   def initialize name        #initialize the stats of the wizard
     super name               #initialize using super class constructor
   end
@@ -20,7 +21,9 @@ Here is where the wizards base skills are defined....
 The wizard will in the future be able to create their own skills, spells.
 But to start out the wizard will only be able to use basic magic. To practice
 and to become more powerful. The wizard on creation will also be able to choose
-a specialization 
+a specialization. Choosing a specialtization means that one trains faster in that
+specialization, but you can still master it. Training will take time and money and experience
+just like in discworld
 =end
 
   def creation        #wizard will be able to create objects, his proficiency is based on the 
@@ -29,7 +32,7 @@ a specialization
   def enchantment     #wizard will be able to enchant any object, except for those that are
   end                 #unenchantable
 
-  def 
+  
 
 
 end
