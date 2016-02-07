@@ -27,9 +27,9 @@ class Room
   attr_reader :value
   attr_accessor :n, :w, :e, :s, :nw, :ne, :sw, :se
 
-  def initialize string_args, value
-    case string_args
-    when 'n'
+  def initialize string_args, value            #this @value is a hash where the keys are monster, player, item, and maptype
+    case string_args                           #will store the value of whatever is in that room at that moment
+    when 'n'                                   #will be in this order {monster: [], player: [], item: [], maptype: xxxx}
       self.north value
     when 's'
       self.south value

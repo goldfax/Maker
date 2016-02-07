@@ -15,6 +15,21 @@ class Wizard < Player  #inherit functions from Player class
     super name               #initialize using super class constructor
   end
 
-  
+=begin
+Here is where the wizards base skills are defined....
+The wizard will in the future be able to create their own skills, spells.
+But to start out the wizard will only be able to use basic magic. To practice
+and to become more powerful. The wizard on creation will also be able to choose
+a specialization 
+=end
+
+  def creation        #wizard will be able to create objects, his proficiency is based on the 
+  end                 #skill level he has in this type of magic
+
+  def enchantment     #wizard will be able to enchant any object, except for those that are
+  end                 #unenchantable
+
+  def 
+
 
 end
