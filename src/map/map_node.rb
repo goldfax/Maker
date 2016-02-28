@@ -2,10 +2,6 @@
 #by using a case statement, which of course isn't something that is necessarily
 #Ruby like
 
-#need something to allow each room to know the existence of rooms that are by it.
-#That is if you make a new empty room to the east of a room, that new room should know
-#that there is a room to the west of it. Should be a pretty simple thing to implement
-
 
 
 class EmptyRoom

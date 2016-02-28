@@ -14,3 +14,7 @@
 Update: Will try and use a more complex datastructure for map as the array is a bit simple, and 
 really I want something more like a has where things can be accessed by a key rather than looping through
 and finding it. Or a linked list, which would be very interesting.
+
+Update: Need to use YARD to document my files lol, takes too long to just look at the methods and figure out what
+        parameters they need. Lots of scrolling and things involved. Learn the usage of metadata tags and 
+        use the ability to generate documentation well.

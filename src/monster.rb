@@ -1,4 +1,4 @@
-
+#going to need many different 
 
 
 class Monster #super class monster that contains methods that other types of monsters
