@@ -11,9 +11,11 @@ require './player.rb'
 
 class Wizard < Player  #inherit functions from Player class
 
-  attr_accessor 
+  #attr_accessor 
   def initialize name        #initialize the stats of the wizard
     super name               #initialize using super class constructor
+    @stats = {str: 5, int: 15, agi: 7, const: 5, wisd: 15, dext: 7}
+    @health = 100
   end
 
 =begin
