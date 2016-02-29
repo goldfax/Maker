@@ -3,8 +3,6 @@
 
 class Monster #super class monster that contains methods that other types of monsters
               #may use
-
-  include '../status_effects.rb'
   def initialize
   end
 

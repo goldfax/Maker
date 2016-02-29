@@ -13,5 +13,9 @@ class Thief < Player
     @stats = {str: 10, int: 7, agi: 15, const: 5, wisd: 7, dext: 12}
   end
 
+  #here is where the skills of the thief is defined, IE a thief can steal, 
+  #use stealthy actions and upgrades to the class would follow two standard paths
+  #assassin or a different kind of thief (upgraded stealing + combat capabilities vs upgraded stealth + combat)
+
   
 end

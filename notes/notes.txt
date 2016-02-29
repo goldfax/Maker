@@ -18,3 +18,7 @@ and finding it. Or a linked list, which would be very interesting.
 Update: Need to use YARD to document my files lol, takes too long to just look at the methods and figure out what
         parameters they need. Lots of scrolling and things involved. Learn the usage of metadata tags and 
         use the ability to generate documentation well.
+
+Update: Need some kind of system where there are certain states that a "character can be in" so I should definitely wrap
+        the monster and player classes in a large module that will effectively give them capabilities that are in that module.
+        This is so there can be buffs and debuffs that are applied to both player characters and monsters.

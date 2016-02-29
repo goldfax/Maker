@@ -92,6 +92,8 @@ class Room
     @value = v
   end
 
+  def has_n?
+    if @n.class is 
 
   
 end

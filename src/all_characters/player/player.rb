@@ -1,4 +1,6 @@
 class Player
+
+  include '../status_effects.rb'
   
   attr_accessor :name, :job, :level, :experience, :money, :health, :required_exp
   
