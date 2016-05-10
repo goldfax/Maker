@@ -25,7 +25,7 @@ end
 
 class Room
   attr_reader :value
-  attr_accessor :n, :w, :e, :s, :nw, :ne, :sw, :se
+  attr_accessor :n, :w, :e, :s, :nw, :ne, :sw, :se  #links to rooms connected to current room, returns 
 
   def initialize string_args, value            #this @value is a hash where the keys are monster, player, item, and maptype
     case string_args                           #will store the value of whatever is in that room at that moment
@@ -38,13 +38,13 @@ class Room
     when 'e'
       self.east value
     when 'ne'
-      self.neast value
+      self.northeast value
     when 'nw'
-      self.nwest value
+      self.northwest value
     when 'sw'
-      self.swest value
+      self.southwest value
     when 'se'
-      self.seast value
+      self.southeast value
     end
   end
 
